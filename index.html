@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Been Together</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <audio id="audio" src="music.mp3"></audio>
   <header>
     <div class="content">
       <h1>Been together</h1>
@@ -15,5 +17,11 @@
     </div>
   </header>
   <script src="main.js"></script>
+  <script type="text/javascript">
+   var result = window.confirm("Nhạc hay bị nghiện đấy!");
+   if (result){
+      document.getElementById("audio").play();
+   }
+  </script>
 </body>
 </html>
