@@ -18,10 +18,11 @@
   </header>
   <script src="main.js"></script>
   <script type="text/javascript">
-   var result = window.confirm("Nhạc hay bị nghiện đấy!");
-   if (result){
-      document.getElementById("audio").play();
-   }
+   alert("Click chuot hoac cham vao man hinh de nghe nhac");
+   const music = document.getElementById("audio");
+   document.body.addEventListener("click", function (evt) {
+      music.play();
+   });
   </script>
 </body>
 </html>
