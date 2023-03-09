@@ -18,9 +18,12 @@
   </header>
   <script src="main.js"></script>
   <script type="text/javascript">
-   alert("Click chuot hoac cham vao man hinh de nghe nhac");
+   window.alert("Click chuot hoac cham vao man hinh de nghe nhac");
    const music = document.getElementById("audio");
    document.body.addEventListener("click", function (evt) {
+      music.play();
+   });
+   document.body.addEventListener("touchstart", function (evt) {
       music.play();
    });
   </script>
